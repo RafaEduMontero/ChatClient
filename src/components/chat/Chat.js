@@ -20,13 +20,15 @@ const Chat = () => {
 
     const inputRef = useRef();
 
+    console.log(user)
+
     useEffect(() => {
         socket = io(ENDPT);
         socket.emit('join',
             {  
                 name: user.name,
                 room_id,
-                user_id:user._id
+                user_id: user._id
             })
     }, []);
 

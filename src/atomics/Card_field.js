@@ -12,10 +12,6 @@ const Card_field = ({user,room,setRoom,crearSala,rooms,setAsFlor,setAsRafa}) => 
                         <span className="card-title">Bienvenido {user? user.name : ''}</span>
                         <Input_field crearSala={crearSala} room={room} setRoom={setRoom}/>
                     </div>
-                    <div className="card-action">
-                        <a href="#" onClick={setAsRafa}>Soy Rafa</a>
-                        <a href="#" onClick={setAsFlor}>Soy Flor</a>
-                    </div>
                 </div>
             </div>
             <div className="col s12 m6">
